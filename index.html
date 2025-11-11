@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeepBoop Apps - Legal Documents</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .intro h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        
+        .intro p {
+            color: #666;
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .app-card {
+            background: #f8f9ff;
+            border-radius: 15px;
+            padding: 30px;
+            border: 2px solid #e8ebff;
+            transition: all 0.3s ease;
+        }
+        
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+        }
+        
+        .app-card h3 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        .app-card .status {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .status.live {
+            background: #d4edda;
+            color: #155724;
+        }
+        
+        .status.coming-soon {
+            background: #fff3cd;
+            color: #856404;
+        }
+        
+        .app-card p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .links {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .links a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            border: 2px solid #667eea;
+            transition: all 0.3s ease;
+            font-size: 0.95em;
+        }
+        
+        .links a:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        footer {
+            background: #f8f9ff;
+            padding: 30px;
+            text-align: center;
+            border-top: 2px solid #e8ebff;
+        }
+        
+        footer p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .support-link {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 10px;
+        }
+        
+        .support-link:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            .content {
+                padding: 30px 20px;
+            }
+            
+            .app-card {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 BeepBoop Apps</h1>
+            <p>Privacy policies and terms of service for the BeepBoop app family</p>
+        </header>
+        
+        <div class="content">
+            <div class="intro">
+                <h2>Privacy-First Mental Health & Wellness Tools</h2>
+                <p>All BeepBoop apps are built with your privacy and safety as the top priority. Your data stays on your device, and we never sell your information.</p>
+            </div>
+            
+            <div class="apps-grid">
+                <div class="app-card">
+                    <h3>BeepBoop+ Recovery</h3>
+                    <span class="status live">🟢 Live</span>
+                    <p>Addiction recovery support with streak tracking, supporter connections, and mental health tools.</p>
+                    <div class="links">
+                        <a href="recovery/privacy-policy.html">Privacy Policy</a>
+                        <a href="recovery/terms-of-service.html">Terms of Service</a>
+                    </div>
+                </div>
+                
+                <div class="app-card">
+                    <h3>BeepBoop Wellness</h3>
+                    <span class="status coming-soon">🟡 Coming Soon</span>
+                    <p>Comprehensive mental health toolkit with evidence-based tools, virtual pets, and wellness tracking.</p>
+                    <div class="links">
+                        <a href="wellness/privacy-policy.html">Privacy Policy</a>
+                        <a href="wellness/terms-of-service.html">Terms of Service</a>
+                    </div>
+                </div>
+                
+                <div class="app-card">
+                    <h3>BeepBoop Period</h3>
+                    <span class="status coming-soon">🟡 Coming Soon</span>
+                    <p>Period tracking with partner support features that respect your privacy and data security.</p>
+                    <div class="links">
+                        <a href="period/privacy-policy.html">Privacy Policy</a>
+                        <a href="period/terms-of-service.html">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p><strong>Developer:</strong> Jessy (ariadnecreates)</p>
+            <p><strong>Contact:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="bbd8d4d5cfdad8cf95dac9d2dadfd5ded8c9dedacfdec8fbdcd6dad2d795d8d4d6">[email&#160;protected]</a></p>
+            <p><strong>Response Time:</strong> Within 7 business days</p>
+            <a href="https://buymeacoffee.com/AriadneCreates" class="support-link" target="_blank">☕ Support the Developer</a>
+            <p style="margin-top: 20px; font-siz
